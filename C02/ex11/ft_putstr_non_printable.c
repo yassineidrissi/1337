@@ -1,9 +1,16 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_putstr_non_printable.c                          :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: yaidriss <yaidriss@student.1337.ma>        +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2022/05/15 13:31:49 by yaidriss          #+#    #+#             */
+/*   Updated: 2022/05/15 13:31:55 by yaidriss         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
 #include <unistd.h>
-
-/*
-** Converts the value to hex, to be printed.
-*/
 
 static void	print_hex(int np)
 {
@@ -19,14 +26,7 @@ static void	print_hex(int np)
 		write(1, &hex[np], 1);
 }
 
-/*
-** Displays a string of characters onscreen.
-** If this string contains characters that aren’t printable,
-** they’ll have to be displayed in the shape of hexadecimals (lowercase),
-** preceeded by a "backslash".
-*/
-
-void		ft_putstr_non_printable(char *str)
+void	ft_putstr_non_printable(char *str)
 {
 	int		i;
 
