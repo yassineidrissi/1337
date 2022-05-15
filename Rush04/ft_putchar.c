@@ -6,13 +6,13 @@
 /*   By: yaidriss <yaidriss@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/15 15:43:00 by yaidriss          #+#    #+#             */
-/*   Updated: 2022/05/15 16:53:59 by yaidriss         ###   ########.fr       */
+/*   Updated: 2022/05/15 18:40:07 by yaidriss         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 
-void ft_putchar(char c)
+void	ft_putchar(char c)
 {
 	write(1, &c, 1);
 }
