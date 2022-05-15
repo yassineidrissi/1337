@@ -6,13 +6,13 @@
 /*   By: yaidriss <yaidriss@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/15 15:42:58 by yaidriss          #+#    #+#             */
-/*   Updated: 2022/05/15 18:35:38 by yaidriss         ###   ########.fr       */
+/*   Updated: 2022/05/15 18:39:48 by yaidriss         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void rush(int, int);
+void	rush(int x, int y);
 
-int main()
+int	main(void)
 {
 	rush(10, 2);
 	return (0);
