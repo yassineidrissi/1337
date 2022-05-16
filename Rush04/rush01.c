@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   rush04.c                                           :+:      :+:    :+:   */
+/*   rush01.c                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ikorchi <ikorchi@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/05/15 15:40:08 by ikorchi          #+#    #+#             */
-/*   Updated: 2022/05/16 23:58:23 by ikorchi         ###   ########.fr       */
+/*   Created: 2022/05/16 23:58:47 by ikorchi          #+#    #+#             */
+/*   Updated: 2022/05/17 00:11:45 by ikorchi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,15 +21,15 @@ void	ft_print_first(int x)
 	i = 0;
 	if (x == 1)
 	{
-		ft_putchar('A');
+		ft_putchar('/');
 		ft_putchar('\n');
 	}
 	else
 	{	
-		ft_putchar('A');
+		ft_putchar('/');
 		while (i++ < x -2)
-			ft_putchar('B');
-		ft_putchar('C');
+			ft_putchar('*');
+		ft_putchar('\\');
 		ft_putchar('\n');
 	}
 }
@@ -39,12 +39,12 @@ void	ft_print_line(int x)
 	int	i;
 
 	i = 0;
-	ft_putchar('B');
+	ft_putchar('*');
 	if (x > 1)
 	{	
 		while (i++ < x -2)
 			ft_putchar(' ');
-		ft_putchar('B');
+		ft_putchar('*');
 	}
 	ft_putchar('\n');
 }
@@ -56,15 +56,15 @@ void	ft_print_last(int x)
 	i = 0;
 	if (x == 1)
 	{
-		ft_putchar('C');
+		ft_putchar('\\');
 		ft_putchar('\n');
 	}
 	else
 	{	
-		ft_putchar('C');
+		ft_putchar('\\');
 		while (i++ < x -2)
-			ft_putchar('B');
-		ft_putchar('A');
+			ft_putchar('*');
+		ft_putchar('/');
 		ft_putchar('\n');
 	}
 }

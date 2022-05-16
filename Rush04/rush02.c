@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   rush04.c                                           :+:      :+:    :+:   */
+/*   rush02.c                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ikorchi <ikorchi@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/05/15 15:40:08 by ikorchi          #+#    #+#             */
-/*   Updated: 2022/05/16 23:58:23 by ikorchi         ###   ########.fr       */
+/*   Created: 2022/05/17 00:02:18 by ikorchi          #+#    #+#             */
+/*   Updated: 2022/05/17 00:14:08 by ikorchi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,7 @@ void	ft_print_first(int x)
 		ft_putchar('A');
 		while (i++ < x -2)
 			ft_putchar('B');
-		ft_putchar('C');
+		ft_putchar('A');
 		ft_putchar('\n');
 	}
 }
@@ -64,7 +64,7 @@ void	ft_print_last(int x)
 		ft_putchar('C');
 		while (i++ < x -2)
 			ft_putchar('B');
-		ft_putchar('A');
+		ft_putchar('C');
 		ft_putchar('\n');
 	}
 }
