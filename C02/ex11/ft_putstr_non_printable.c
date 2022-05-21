@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putstr_non_printable.c                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: yaidriss <yaidriss@student.1337.ma>        +#+  +:+       +#+        */
+/*   By: yaidriss <yaidriss@student1337.com>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/15 13:31:49 by yaidriss          #+#    #+#             */
-/*   Updated: 2022/05/15 19:53:37 by yaidriss         ###   ########.fr       */
+/*   Updated: 2022/05/19 01:09:37 by yaidriss         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,6 +36,8 @@ void	ft_putstr_non_printable(char *str)
 		if ((str[i] <= 31 && str[i] >= 0) || str[i] == 127)
 		{
 			write(1, "\\", 1);
+			if (str[i] < 0)
+				str[i] += 256;
 			if (str[i] < 16)
 				write(1, "0", 1);
 			print_hex(str[i]);

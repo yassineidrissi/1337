@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlcpy.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: yaidriss <yaidriss@student.1337.ma>        +#+  +:+       +#+        */
+/*   By: yaidriss <yaidriss@student1337.com>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/14 17:36:55 by yaidriss          #+#    #+#             */
-/*   Updated: 2022/05/15 19:45:46 by yaidriss         ###   ########.fr       */
+/*   Updated: 2022/05/19 01:03:20 by yaidriss         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,10 +30,6 @@ unsigned int	ft_strlcpy(char *dest, char *src, unsigned int size)
 		dest[i] = src[i];
 		i++;
 	}
-	while (i < size)
-	{
-		dest[i] = '\0';
-		i++;
-	}
+	dest[i] = '\0';
 	return (ft_strlen(src));
 }
