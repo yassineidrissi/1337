@@ -6,7 +6,11 @@
 /*   By: yaidriss <yaidriss@student1337.com>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/15 13:31:49 by yaidriss          #+#    #+#             */
+<<<<<<< HEAD
 /*   Updated: 2022/05/19 01:09:37 by yaidriss         ###   ########.fr       */
+=======
+/*   Updated: 2022/05/19 19:42:53 by yaidriss         ###   ########.fr       */
+>>>>>>> e2f8c5fb3755f573e7ac30c03386a746dad16c44
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,12 +42,15 @@ void	ft_putstr_non_printable(char *str)
 			write(1, "\\", 1);
 			if (str[i] < 0)
 				str[i] += 256;
+<<<<<<< HEAD
 			if (str[i] < 16)
 				write(1, "0", 1);
+=======
+>>>>>>> e2f8c5fb3755f573e7ac30c03386a746dad16c44
 			print_hex(str[i]);
 		}
 		else
 			write(1, &str[i], 1);
-		i += 1;
+		i++;
 	}
 }
