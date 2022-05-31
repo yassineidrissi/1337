@@ -1,6 +1,7 @@
 {
     "files.associations": {
         "ft_strs_to_tab.h": "c",
-        "stdio.h": "c"
+        "stdio.h": "c",
+        "ft_stock_str.h": "c"
     }
 }
