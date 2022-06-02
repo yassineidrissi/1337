@@ -3,17 +3,15 @@
 /*                                                        :::      ::::::::   */
 /*   ft_show_tab.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: lahammam <lahammam@student.42.fr>          +#+  +:+       +#+        */
+/*   By: yaidriss <yaidriss@1337.ma>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/10/07 18:02:58 by lahammam          #+#    #+#             */
-/*   Updated: 2021/10/12 10:58:32 by lahammam         ###   ########.fr       */
+/*   Created: 2022/05/31 22:24:41 by yaidriss          #+#    #+#             */
+/*   Updated: 2022/05/31 22:29:51 by yaidriss         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
-//#include <stdlib.h>
 #include "ft_stock_str.h"
-//#include <stdio.h>
 
 void	ft_putchar(char c)
 {
@@ -68,16 +66,11 @@ void	ft_show_tab(struct s_stock_str *par)
 	while (par && par[i].str != 0)
 	{
 		ft_putstr(par[i].str);
+		write(1, "\n", 1);
 		ft_putnbr(par[i].size);
 		write(1, "\n", 1);
 		ft_putstr(par[i].copy);
+		write(1, "\n", 1);
 		i++;
 	}
 }
-/*
-int main()
-{
-    // char *av[4] = {"aham","lhou","amin","aham"};
-    // t_stock_str *p =ft_strs_to_tab(4, av);
-    // ft_show_tab(p);
-}*/
